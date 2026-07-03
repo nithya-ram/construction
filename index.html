@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selvam Constructions — Structural &amp; Interior Design</title>
+<meta name="description" content="Selvam Constructions — structural engineering, construction management and interior design under one roof, Chennai &amp; Chengalpattu.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Compiled Tailwind CSS (local, built from tailwind.config.js) -->
+<link rel="stylesheet" href="assets/css/tailwind.css">
+<!-- Custom styles: grid patterns, animations, scroll-reveal -->
+<link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body class="bg-concrete text-ink font-body antialiased">
+
+  <!-- ================= NAV ================= -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-offwhite/95 backdrop-blur border-b border-hairline transition-shadow duration-300">
+    <div class="max-w-7xl mx-auto px-6 lg:px-16 h-[84px] flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-3">
+        <div class="relative w-10 h-10 border-2 border-ink flex items-center justify-center font-display font-bold text-xl">
+          S
+          <span class="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-amber"></span>
+        </div>
+        <div>
+          <div class="font-display font-bold text-lg tracking-wide uppercase leading-none">Selvam Constructions</div>
+          <div class="font-mono text-[10px] tracking-[0.14em] text-steel uppercase mt-1">Structural &amp; Interior Design</div>
+        </div>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-10">
+        <a href="#about" class="nav-link text-sm font-medium hover:text-blueprint transition-colors">About</a>
+        <a href="#services" class="nav-link text-sm font-medium hover:text-blueprint transition-colors">Services</a>
+        <a href="#process" class="nav-link text-sm font-medium hover:text-blueprint transition-colors">Process</a>
+        <a href="#projects" class="nav-link text-sm font-medium hover:text-blueprint transition-colors">Projects</a>
+        <a href="#contact" class="nav-link text-sm font-medium hover:text-blueprint transition-colors">Contact</a>
+        <a href="#contact" class="bg-ink text-offwhite px-6 py-3 font-mono text-xs tracking-widest uppercase hover:bg-amber hover:text-ink transition-colors duration-300">Get a Quote</a>
+      </div>
+
+      <button id="menuBtn" class="lg:hidden flex flex-col gap-1.5 w-8" aria-label="Toggle menu">
+        <span class="block h-0.5 bg-ink transition-transform duration-300" id="bar1"></span>
+        <span class="block h-0.5 bg-ink transition-opacity duration-300" id="bar2"></span>
+        <span class="block h-0.5 bg-ink transition-transform duration-300" id="bar3"></span>
+      </button>
+    </div>
+
+    <!-- mobile menu -->
+    <div id="mobileMenu" class="lg:hidden max-h-0 overflow-hidden transition-all duration-500 bg-offwhite border-t border-hairline">
+      <div class="flex flex-col px-6 py-6 gap-5">
+        <a href="#about" class="mobile-link text-base font-medium">About</a>
+        <a href="#services" class="mobile-link text-base font-medium">Services</a>
+        <a href="#process" class="mobile-link text-base font-medium">Process</a>
+        <a href="#projects" class="mobile-link text-base font-medium">Projects</a>
+        <a href="#contact" class="mobile-link text-base font-medium">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <section id="top" class="relative bg-ink text-offwhite overflow-hidden pt-[84px]">
+    <div class="absolute inset-0 blueprint-grid opacity-[0.14]"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-16 pt-20 pb-20">
+      <div class="reveal flex items-center gap-4">
+        <div class="dim-tick"></div>
+        <span class="font-mono text-xs tracking-[0.2em] uppercase text-blueline">Chengalpattu · Chennai · Since 2014</span>
+      </div>
+
+      <h1 class="reveal font-display font-bold uppercase leading-[0.98] text-5xl sm:text-6xl lg:text-8xl mt-8 max-w-4xl" style="transition-delay:0.1s">
+        We build the<br>structure. <span class="text-amber">We design</span><br>the space.
+      </h1>
+
+      <p class="reveal text-steel-200 text-base lg:text-lg leading-relaxed max-w-xl mt-8 text-gray-300" style="transition-delay:0.2s">
+        Selvam Constructions plans, engineers and fits out buildings end to end — structural drawings, site execution and interior design under one roof, so nothing gets lost in translation between the architect and the mason.
+      </p>
+
+      <div class="reveal flex flex-wrap items-center gap-7 mt-11" style="transition-delay:0.3s">
+        <a href="#contact" class="group relative bg-amber text-ink px-8 py-4 font-mono text-sm tracking-widest uppercase font-bold overflow-hidden">
+          <span class="relative z-10">Request a Site Visit</span>
+          <span class="absolute inset-0 bg-offwhite scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
+        </a>
+        <a href="#projects" class="text-offwhite border-b border-steel pb-1 hover:border-amber hover:text-amber transition-colors">View Our Projects →</a>
+      </div>
+
+      <div class="reveal grid grid-cols-2 lg:grid-cols-4 border-t border-white/10 mt-16 pt-0" style="transition-delay:0.4s">
+        <div class="stat-box border-l-0 lg:border-l-0 pt-7 pr-6">
+          <div class="font-display font-bold text-4xl counter" data-target="120">0</div><span class="font-display font-bold text-4xl">+</span>
+          <div class="font-mono text-[11px] tracking-widest uppercase text-steel mt-1.5">Projects Delivered</div>
+        </div>
+        <div class="stat-box border-l border-white/10 pt-7 pl-6 pr-6">
+          <div class="font-display font-bold text-4xl counter" data-target="11">0</div>
+          <div class="font-mono text-[11px] tracking-widest uppercase text-steel mt-1.5">Years in Practice</div>
+        </div>
+        <div class="stat-box border-l border-white/10 pt-7 pl-6 pr-6">
+          <div class="font-display font-bold text-4xl counter" data-target="45">0</div>
+          <div class="font-mono text-[11px] tracking-widest uppercase text-steel mt-1.5">Engineers &amp; Crew</div>
+        </div>
+        <div class="stat-box border-l border-white/10 pt-7 pl-6">
+          <div class="font-display font-bold text-4xl">0</div>
+          <div class="font-mono text-[11px] tracking-widest uppercase text-steel mt-1.5">Missed Handover Dates</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="bg-concrete py-24 lg:py-32 border-b border-hairline">
+    <div class="max-w-7xl mx-auto px-6 lg:px-16 grid lg:grid-cols-2 gap-16 items-center">
+      <div class="reveal relative bg-blueprint min-h-[380px] lg:min-h-[440px] blueprint-grid-light flex items-center justify-center">
+        <svg class="w-3/5" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="30" y="60" width="140" height="120" stroke="#FBFAF7" stroke-width="1.5" class="draw-line"/>
+          <line x1="30" y1="100" x2="170" y2="100" stroke="#FBFAF7" stroke-width="1"/>
+          <line x1="30" y1="140" x2="170" y2="140" stroke="#FBFAF7" stroke-width="1"/>
+          <line x1="70" y1="60" x2="70" y2="180" stroke="#FBFAF7" stroke-width="1"/>
+          <line x1="130" y1="60" x2="130" y2="180" stroke="#FBFAF7" stroke-width="1"/>
+          <polygon points="30,60 100,25 170,60" stroke="#FBFAF7" stroke-width="1.5" fill="none"/>
+        </svg>
+        <div class="absolute bottom-5 left-5 font-mono text-[11px] tracking-widest text-offwhite">FIG.01 — STRUCTURAL ELEVATION</div>
+      </div>
+
+      <div class="reveal" style="transition-delay:0.1s">
+        <div class="font-mono text-xs tracking-[0.18em] uppercase text-steel">— About the practice</div>
+        <h2 class="font-display font-bold uppercase text-4xl lg:text-5xl leading-tight mt-4">Engineering discipline, interior sensibility.</h2>
+        <p class="text-steel leading-relaxed mt-6 max-w-lg text-[15px]">Most firms hand you off between the person who calculates load-bearing walls and the person who picks your flooring. Selvam Constructions was started to close that gap — one team carries a project from soil testing and structural drawings through to the last coat of paint and the last light fitting.</p>
+        <p class="text-steel leading-relaxed mt-5 max-w-lg text-[15px]">We work across residential, commercial and renovation projects in and around Chennai, with every structural decision documented and every interior choice tied back to how the building actually stands.</p>
+
+        <div class="flex items-center gap-5 mt-9 pt-7 border-t border-hairline">
+          <div class="w-16 h-16 bg-ink flex items-center justify-center text-offwhite font-display font-bold text-2xl shrink-0">S</div>
+          <div>
+            <div class="font-semibold text-[15px]">Selvam</div>
+            <div class="font-mono text-[11px] text-steel tracking-wide mt-1">FOUNDER &amp; PRINCIPAL ENGINEER, SELVAM CONSTRUCTIONS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="bg-offwhite py-24 lg:py-32 border-b border-hairline">
+    <div class="max-w-7xl mx-auto px-6 lg:px-16">
+      <div class="reveal flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
+        <h2 class="font-display font-bold uppercase text-4xl lg:text-5xl leading-tight max-w-xl">What we take<br>full responsibility for</h2>
+        <p class="text-steel text-sm max-w-xs leading-relaxed">Four disciplines, one accountable team — from the footing to the furniture.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-hairline border border-hairline">
+        <div class="service-card reveal bg-offwhite p-8 relative group hover:bg-ink transition-colors duration-300">
+          <div class="absolute top-4 right-4 w-4 h-4 border-t-2 border-r-2 border-amber"></div>
+          <div class="font-mono text-xs text-amber">01</div>
+          <h3 class="font-display font-bold uppercase text-lg mt-5 group-hover:text-offwhite transition-colors">Structural Design</h3>
+          <p class="text-steel text-sm leading-relaxed mt-3 group-hover:text-gray-300 transition-colors">Load calculations, RCC drawings and soil-appropriate foundation planning, certified and filed for approval.</p>
+        </div>
+        <div class="service-card reveal bg-offwhite p-8 relative group hover:bg-ink transition-colors duration-300" style="transition-delay:0.1s">
+          <div class="absolute top-4 right-4 w-4 h-4 border-t-2 border-r-2 border-amber"></div>
+          <div class="font-mono text-xs text-amber">02</div>
+          <h3 class="font-display font-bold uppercase text-lg mt-5 group-hover:text-offwhite transition-colors">Construction &amp; Site Execution</h3>
+          <p class="text-steel text-sm leading-relaxed mt-3 group-hover:text-gray-300 transition-colors">Day-to-day site management, material quality checks and schedule tracking through to handover.</p>
+        </div>
+        <div class="service-card reveal bg-offwhite p-8 relative group hover:bg-ink transition-colors duration-300" style="transition-delay:0.2s">
+          <div class="absolute top-4 right-4 w-4 h-4 border-t-2 border-r-2 border-amber"></div>
+          <div class="font-mono text-xs text-amber">03</div>
+          <h3 class="font-display font-bold uppercase text-lg mt-5 group-hover:text-offwhite transition-colors">Interior Design</h3>
+          <p class="text-steel text-sm leading-relaxed mt-3 group-hover:text-gray-300 transition-colors">Space planning, modular interiors and finishing that's designed alongside the structure, not after it.</p>
+        </div>
+        <div class="service-card reveal bg-offwhite p-8 relative group hover:bg-ink transition-colors duration-300" style="transition-delay:0.3s">
+          <div class="absolute top-4 right-4 w-4 h-4 border-t-2 border-r-2 border-amber"></div>
+          <div class="font-mono text-xs text-amber">04</div>
+          <h3 class="font-display font-bold uppercase text-lg mt-5 group-hover:text-offwhite transition-colors">Renovation &amp; Retrofit</h3>
+          <p class="text-steel text-sm leading-relaxed mt-3 group-hover:text-gray-300 transition-colors">Structural strengthening, seepage correction and interior upgrades for existing homes and buildings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESS ================= -->
+  <section id="process" class="bg-ink text-offwhite py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-16">
+      <div class="reveal flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16">
+        <h2 class="font-display font-bold uppercase text-4xl lg:text-5xl leading-tight max-w-xl">How a project<br>moves through our office</h2>
+        <p class="text-gray-400 text-sm max-w-xs leading-relaxed">Six stages, tracked from first site visit to final handover.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 relative gap-y-10">
+        <div class="hidden lg:block absolute top-[7px] left-0 right-0 h-px bg-white/10"></div>
+
+        <div class="process-step reveal relative pt-11 pr-4">
+          <div class="absolute top-0 left-0 w-3.5 h-3.5 rounded-full border-2 border-amber bg-ink"></div>
+          <div class="font-mono text-xs text-blueline">01</div>
+          <h4 class="font-display font-bold uppercase text-base mt-2">Consultation</h4>
+          <p class="text-gray-400 text-xs leading-relaxed mt-2">Site visit, brief and budget discussion.</p>
+        </div>
+        <div class="process-step reveal relative pt-11 pr-4" style="transition-delay:0.05s">
+          <div class="absolute top-0 left-0 w-3.5 h-3.5 rounded-full border-2 border-amber bg-ink"></div>
+          <div class="font-mono text-xs text-blueline">02</div>
+          <h4 class="font-display font-bold uppercase text-base mt-2">Structural Drawing</h4>
+          <p class="text-gray-400 text-xs leading-relaxed mt-2">Soil testing, load design, RCC layout.</p>
+        </div>
+        <div class="process-step reveal relative pt-11 pr-4" style="transition-delay:0.1s">
+          <div class="absolute top-0 left-0 w-3.5 h-3.5 rounded-full border-2 border-amber bg-ink"></div>
+          <div class="font-mono text-xs text-blueline">03</div>
+          <h4 class="font-display font-bold uppercase text-base mt-2">Approval</h4>
+          <p class="text-gray-400 text-xs leading-relaxed mt-2">Municipal permits and plan sanction.</p>
+        </div>
+        <div class="process-step reveal relative pt-11 pr-4" style="transition-delay:0.15s">
+          <div class="absolute top-0 left-0 w-3.5 h-3.5 rounded-full border-2 border-amber bg-ink"></div>
+          <div class="font-mono text-xs text-blueline">04</div>
+          <h4 class="font-display font-bold uppercase text-base mt-2">Construction</h4>
+          <p class="text-gray-400 text-xs leading-relaxed mt-2">Foundation to superstructure, site-managed.</p>
+        </div>
+        <div class="process-step reveal relative pt-11 pr-4" style="transition-delay:0.2s">
+          <div class="absolute top-0 left-0 w-3.5 h-3.5 rounded-full border-2 border-amber bg-ink"></div>
+          <div class="font-mono text-xs text-blueline">05</div>
+          <h4 class="font-display font-bold uppercase text-base mt-2">Interior Fit-out</h4>
+          <p class="text-gray-400 text-xs leading-relaxed mt-2">Modular work, finishes, fixtures.</p>
+        </div>
+        <div class="process-step reveal relative pt-11 pr-4" style="transition-delay:0.25s">
+          <div class="absolute top-0 left-0 w-3.5 h-3.5 rounded-full border-2 border-amber bg-ink"></div>
+          <div class="font-mono text-xs text-blueline">06</div>
+          <h4 class="font-display font-bold uppercase text-base mt-2">Handover</h4>
+          <p class="text-gray-400 text-xs leading-relaxed mt-2">Final walkthrough and documentation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="bg-concrete py-24 lg:py-32 border-b border-hairline">
+    <div class="max-w-7xl mx-auto px-6 lg:px-16">
+      <div class="reveal flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
+        <h2 class="font-display font-bold uppercase text-4xl lg:text-5xl">Recent work</h2>
+        <p class="text-steel text-sm max-w-xs leading-relaxed">A sample of structural and interior projects completed across Chennai and Chengalpattu.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="project-card reveal bg-offwhite border border-hairline overflow-hidden group cursor-pointer">
+          <div class="h-52 overflow-hidden">
+            <div class="w-full h-full bg-gradient-to-br from-blueprint to-ink transition-transform duration-700 group-hover:scale-110"></div>
+          </div>
+          <div class="p-6">
+            <div class="font-mono text-[11px] text-steel uppercase tracking-wide">Residential · Chengalpattu · 2025</div>
+            <h4 class="font-display font-bold uppercase text-xl mt-2.5">Anbu Residence</h4>
+            <p class="text-steel text-sm mt-2 leading-relaxed">Independent house — structural design and full interior fit-out, 2,400 sq.ft.</p>
+          </div>
+        </div>
+        <div class="project-card reveal bg-offwhite border border-hairline overflow-hidden group cursor-pointer" style="transition-delay:0.1s">
+          <div class="h-52 overflow-hidden">
+            <div class="w-full h-full bg-gradient-to-br from-steel to-ink transition-transform duration-700 group-hover:scale-110"></div>
+          </div>
+          <div class="p-6">
+            <div class="font-mono text-[11px] text-steel uppercase tracking-wide">Commercial · Chennai · 2024</div>
+            <h4 class="font-display font-bold uppercase text-xl mt-2.5">Meridian Office Fit-out</h4>
+            <p class="text-steel text-sm mt-2 leading-relaxed">Structural retrofit and interior build-out for a 3-floor office space.</p>
+          </div>
+        </div>
+        <div class="project-card reveal bg-offwhite border border-hairline overflow-hidden group cursor-pointer" style="transition-delay:0.2s">
+          <div class="h-52 overflow-hidden">
+            <div class="w-full h-full bg-gradient-to-br from-amber to-ink transition-transform duration-700 group-hover:scale-110"></div>
+          </div>
+          <div class="p-6">
+            <div class="font-mono text-[11px] text-steel uppercase tracking-wide">Renovation · Tambaram · 2024</div>
+            <h4 class="font-display font-bold uppercase text-xl mt-2.5">Lakshmi Nagar Renovation</h4>
+            <p class="text-steel text-sm mt-2 leading-relaxed">Seepage correction, structural strengthening and interior renewal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIAL ================= -->
+  <section class="bg-blueprint text-offwhite py-24">
+    <div class="max-w-4xl mx-auto px-6 lg:px-16">
+      <div class="reveal font-display font-bold text-6xl text-amber leading-none">"</div>
+      <blockquote class="reveal text-2xl lg:text-3xl leading-snug mt-2" style="transition-delay:0.1s">Selvam and his team handled our structural drawings and our interiors as one plan, not two contracts. We never had to explain the same thing twice.</blockquote>
+      <div class="reveal font-mono text-sm text-blue-200 mt-8" style="transition-delay:0.2s">— R. Kumaresan, Homeowner, Chengalpattu</div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="bg-offwhite pt-24 lg:pt-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-16">
+      <div class="reveal flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+        <h2 class="font-display font-bold uppercase text-4xl lg:text-5xl leading-tight max-w-xl">Have a plot, a plan,<br>or just an idea?</h2>
+        <p class="text-steel text-sm max-w-xs leading-relaxed">Talk to Selvam directly about your structural or interior project.</p>
+      </div>
+
+      <div class="reveal flex flex-wrap items-center gap-7 mt-9" style="transition-delay:0.1s">
+        <a href="tel:+919800000000" class="bg-ink text-offwhite px-8 py-4 font-mono text-sm tracking-widest uppercase font-bold hover:bg-amber hover:text-ink transition-colors duration-300">Schedule a Consultation</a>
+        <a href="tel:+919800000000" class="text-ink border-b border-ink pb-1 hover:text-amber hover:border-amber transition-colors">+91 98XXX XXXXX</a>
+      </div>
+
+      <!-- title block -->
+      <div class="reveal mt-20 border-t-2 border-ink" style="transition-delay:0.2s">
+        <div class="grid grid-cols-2 lg:grid-cols-5">
+          <div class="border-r border-b border-ink p-6">
+            <div class="font-mono text-[10px] tracking-widest uppercase text-steel">Firm</div>
+            <div class="font-display font-bold uppercase text-xl mt-2">Selvam Constructions</div>
+          </div>
+          <div class="border-r border-b border-ink p-6">
+            <div class="font-mono text-[10px] tracking-widest uppercase text-steel">Principal</div>
+            <div class="font-display font-bold uppercase text-xl mt-2">Selvam</div>
+          </div>
+          <div class="border-r border-b border-ink p-6">
+            <div class="font-mono text-[10px] tracking-widest uppercase text-steel">Location</div>
+            <div class="font-display font-bold uppercase text-xl mt-2">Chengalpattu, TN</div>
+          </div>
+          <div class="border-r border-b border-ink p-6">
+            <div class="font-mono text-[10px] tracking-widest uppercase text-steel">Scope</div>
+            <div class="font-display font-bold uppercase text-xl mt-2">Structural + Interior</div>
+          </div>
+          <div class="border-b border-ink p-6">
+            <div class="font-mono text-[10px] tracking-widest uppercase text-steel">Sheet</div>
+            <div class="font-display font-bold uppercase text-xl mt-2">01 of 01</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-ink text-gray-400 py-7 mt-0">
+    <div class="max-w-7xl mx-auto px-6 lg:px-16 flex flex-col sm:flex-row justify-between gap-2 font-mono text-[11px] tracking-wide">
+      <span>© <span id="year"></span> SELVAM CONSTRUCTIONS — STRUCTURAL &amp; INTERIOR DESIGN</span>
+      <span>BUILT WITH TAILWIND CSS · SERVED BY GO</span>
+    </div>
+  </footer>
+
+  <!-- back to top -->
+  <button id="backToTop" class="fixed bottom-7 right-7 z-40 w-12 h-12 bg-ink text-offwhite flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 hover:bg-amber hover:text-ink" aria-label="Back to top">↑</button>
+
+  <!-- jQuery (local, self-hosted) -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
