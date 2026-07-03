@@ -1,0 +1,98 @@
+/* ============================================
+   Selvam Constructions — custom styles
+   (Tailwind handles utility classes; this file
+   covers things Tailwind can't: bg patterns,
+   keyframe animations, scroll-reveal states)
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* ---------- Blueprint grid backgrounds ---------- */
+.blueprint-grid {
+  background-image:
+    repeating-linear-gradient(0deg, #7FA8C9 0 1px, transparent 1px 64px),
+    repeating-linear-gradient(90deg, #7FA8C9 0 1px, transparent 1px 64px);
+}
+
+.blueprint-grid-light {
+  background-image:
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.09) 0 1px, transparent 1px 40px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.09) 0 1px, transparent 1px 40px);
+}
+
+/* ---------- Dimension tick (hero eyebrow) ---------- */
+.dim-tick {
+  width: 34px;
+  height: 1px;
+  background: #D9891F;
+  position: relative;
+}
+.dim-tick::before,
+.dim-tick::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  width: 1px;
+  height: 9px;
+  background: #D9891F;
+}
+.dim-tick::before { left: 0; }
+.dim-tick::after { right: 0; }
+
+/* ---------- Scroll reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Counter number ticking ---------- */
+.counter {
+  display: inline-block;
+}
+
+/* ---------- Nav scrolled state ---------- */
+#navbar.scrolled {
+  box-shadow: 0 1px 0 0 #C8C0B2, 0 8px 24px -8px rgba(0,0,0,0.15);
+}
+
+/* ---------- Mobile menu open state ---------- */
+#mobileMenu.open {
+  max-height: 400px;
+}
+
+/* ---------- Hamburger -> X ---------- */
+#menuBtn.open #bar1 { transform: translateY(6px) rotate(45deg); }
+#menuBtn.open #bar2 { opacity: 0; }
+#menuBtn.open #bar3 { transform: translateY(-6px) rotate(-45deg); }
+
+/* ---------- SVG draw-in animation for the about diagram ---------- */
+.draw-line {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  transition: stroke-dashoffset 1.6s ease;
+}
+.reveal-active .draw-line {
+  stroke-dashoffset: 0;
+}
+
+/* ---------- Back to top button visible state ---------- */
+#backToTop.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ---------- Custom scrollbar (optional, subtle) ---------- */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #EFEAE1; }
+::-webkit-scrollbar-thumb { background: #1D2126; }
